@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="Luotsi product" uid="fi.metsakeskus.luotsi.dt.ui.product" id="fi.metsakeskus.luotsi.dt.ui.product" application="fi.metsakeskus.luotsi.dt.ui.application" version="1.0.0.qualifier" useFeatures="true" includeLaunchers="false">
+
+   <aboutInfo>
+      <image path="./icons/about.png"/>
+      <text>
+         %verboseAboutText
+      </text>
+   </aboutInfo>
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <vmArgs>-Xmx1000M -Dosgi.parentClassloader=ext -Dorg.eclipse.emf.ecore.plugin.EcorePlugin.doNotLoadResourcesPlugin=true -XX:MaxPermSize=256m</vmArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts -Djava.awt.headless=true</vmArgsMac>
+   </launcherArgs>
+
+   <windowImages i16="./icons/icon16.gif" i32="./icons/icon32.gif" i48="./icons/icon48.gif" i64="./icons/icon64.gif" i128="./icons/icon128.gif"/>
+
+   <splash
+      location="fi.metsakeskus.luotsi.dt.ui" />
+   <launcher name="luotsi_dt">
+      <linux icon="./icons/udig.xpm"/>
+      <macosx icon="./icons/icon128.icns"/>
+      <solaris/>
+      <win useIco="true">
+         <ico path="./icons/udig.ico"/>
+         <bmp/>
+      </win>
+   </launcher>
+
+   <vm>
+      <macos include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6</macos>
+   </vm>
+
+   <license>
+        <url>http://www.gnu.org/licenses/lgpl.html</url>
+        <text>
+   Luotsi - User-friendly Desktop Internet GIS
+
+(C) 2012 Metsakeskus Inc.
+         </text>
+   </license>
+
+   <plugins>
+   </plugins>
+
+   <features>
+      <feature id="fi.metsakeskus.luotsi.dt.ui-feature"/>
+   </features>
+
+   <configurations>
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.ds" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.p2.reconciler.dropins" autoStart="true" startLevel="5" />
+      <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
+   </configurations>
+
+</product>

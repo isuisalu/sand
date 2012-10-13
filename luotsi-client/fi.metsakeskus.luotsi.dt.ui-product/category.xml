@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/fi.metsakeskus.luotsi.dt.ui-feature.feature_1.0.0-SNAPSHOT.jar" id="fi.metsakeskus.luotsi.dt.ui-feature" version="1.0.0.qualifier">
+      <category name="fi.metsakeskus.category"/>
+   </feature>
+   <category-def name="fi.metsakeskus.category" label="Luotsi application  Category"/>
+</site>
