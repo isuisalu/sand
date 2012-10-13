@@ -1,0 +1,4 @@
+/*
+ *    Luotsi - User-friendly Desktop Internet GIS
+ *
+ */

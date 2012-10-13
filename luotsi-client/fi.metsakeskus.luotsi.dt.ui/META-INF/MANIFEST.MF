@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Luotsi Ui
+Bundle-SymbolicName: fi.metsakeskus.luotsi.dt.ui;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: fi.metsakeskus.luotsi.dt.ui.Activator
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ net.refractions.udig.ui,
+ net.refractions.udig.libs;visibility:=reexport,
+ org.eclipse.core.expressions,
+ org.eclipse.core.runtime,
+ org.eclipse.e4.ui.workbench.addons.swt;bundle-version="0.10.1"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
